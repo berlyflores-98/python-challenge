@@ -49,8 +49,18 @@ with open(file_path,'r') as csvfile:
     print(f"Winner: {winning_cand}")
     print(30*"-") 
 
-    
-
+index=0   
+with open (os.path.join("Analysis","output_poll.txt"),"w") as output:
+    output.write("Election Results\n")
+    output.write(30*"-")   
+    output.write(f"\nTotal Votes: {total_votes}\n")
+    output.write(30*"-") 
+    for k in candidates:
+        output.write(f"\n{k}: {per_total_vote[index]}% ({candidate_total_vote[index]})\n")
+        index += 1
+    output.write(30*"-") 
+    output.write(f"\nWinner: {winning_cand}\n")
+    output.write(30*"-") 
 
 
 
