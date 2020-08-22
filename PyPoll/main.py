@@ -62,16 +62,3 @@ with open (os.path.join("Analysis","output_poll.txt"),"w") as output:
     output.write(f"\nWinner: {winning_cand}\n")
     output.write(30*"-") 
 
-
-
-#Election Results
-#-------------------------
-#Total Votes: 3521001
-#-------------------------
-#Khan: 63.000% (2218231)
-#Correy: 20.000% (704200)
-#Li: 14.000% (492940)
-#O'Tooley: 3.000% (105630)
-#-------------------------
-#Winner: Khan
-#-------------------------
